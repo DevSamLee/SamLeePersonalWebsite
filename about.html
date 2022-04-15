@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Lee's personal website</title>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- style -->
     <link rel="stylesheet" href="css/reset.css">
@@ -35,7 +35,15 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <img src="image/name.png" alt="Sam Lee">
+            <a href="index.html"><img src="image/name.png" alt="Sam Lee"></a>
+            <div class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </header>
         <section id="aboutme">
             <div class="books">
@@ -86,15 +94,8 @@
                                 <div class="email_error error" id="email_error">*Please enter a valid email address
                                 </div>
                             </li>
-                            <li>
-                                <label for="pwd" class="ir_su">Password</label>
-                                <input type="text" id="pwd" name="pwd" class="input_text" placeholder="password">
-                            </li>
-                            <li>
-                                <div class="pwd_error error" id="pwd_error">*Please enter 6 digit password</div>
-                            </li>
                             <form action="contact.html">
-                                <input class="signup" type="submit" value="Sign Up" />
+                                <input class="subscribe" type="submit" value="Subscribe" />
                             </form>
                         </ol>
                     </form>
