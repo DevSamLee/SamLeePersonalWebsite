@@ -15,19 +15,19 @@
 ### BasicFigmaTutorial - LinkedIn Learning
 | Home |  
 |---------------------|
-| ![](./images/screen1.png) |
+| ![](./image/screen1.png) |
 
 | About Me |
 |--------------------|
-|![](./images/screen2.png) |
+|![](./image/screen2.png) |
 
 | Project |
 |--------------------|
-|![](./images/screen3.png) |
+|![](./image/screen3.png) |
 
 | Contact (with Form validation) |
 |--------------------|
-|![](./images/screen4.png) |
+|![](./image/screen4.png) |
 
 
 
