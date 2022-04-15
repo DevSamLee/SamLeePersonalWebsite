@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Lee's personal website</title>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- style -->
     <link rel="stylesheet" href="css/reset.css">
@@ -35,7 +35,15 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <img src="image/name.png" alt="Sam Lee">
+            <a href="index.html"><img src="image/name.png" alt="Sam Lee"></a>
+            <div class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </header>
         <section id="banner">
             <div class="container">
@@ -84,25 +92,25 @@
                     <li>
                         <a href="about.html">
                             <img src="image/icon1.png" alt="img1">
-                            <span><strong>Books   </strong>table tag is for creating tables.</span>
+                            <span><strong>Books   </strong>Exploring people's thinking!</span>
                         </a>
                     </li>
                     <li>
                         <a href="about.html">
                             <img src="image/icon2.png" alt="img2">
-                            <span><strong>Travel   </strong>div tag is for creating section.</span>
+                            <span><strong>Travel   </strong>Exploring whole new world!</span>
                         </a>
                     </li>
                     <li>
                         <a href="about.html">
                             <img src="image/icon3.png" alt="img3">
-                            <span><strong>Coffee   </strong>div tag is for creating section.</span>
+                            <span><strong>Coffee   </strong>Enjoy life with coffee!</span>
                         </a>
                     </li>
                     <li>
                         <a href="about.html">
                             <img src="image/icon4.png" alt="img4">
-                            <span><strong>Financial   </strong>div tag is for creating section.</span>
+                            <span><strong>Financial   </strong>Save and invest for financial freedom!</span>
                         </a>
                     </li>
                 </ul>
@@ -116,10 +124,10 @@
             <div class="article_box1">
                 <span>Site Map</span>
                 <ul>
-                    <li><a href="index.html"></a>Home</li>
-                    <li><a href="about.html"></a>About Me</li>
-                    <li><a href="project.html"></a>Project</li>
-                    <li><a href="contact.html"></a>Contact</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>                
             </div>
             <div class="article_box2">
@@ -136,15 +144,8 @@
                         <li>
                             <div class="email_error error" id="email_error">*Please enter a valid email address</div>
                         </li>
-                        <li>
-                            <label for="pwd" class="ir_su">Password</label>
-                            <input type="text" id="pwd" name="pwd" class="input_text" placeholder="password">
-                        </li>
-                        <li>
-                            <div class="pwd_error error" id="pwd_error">*Please enter 6 digit password</div>
-                        </li>
                         <form action="contact.html">
-                            <input class="signup" type="submit" value="Sign Up" />
+                            <input class="subscribe" type="submit" value="Subscribe" />
                         </form>
                     </ol>
                     </form>
@@ -157,12 +158,14 @@
             </div>
             <div class="article_box4">
                 <span>Contact Info</span>
-                <ul>
-                    <li><img src="image/name.png" alt="name"></li>
-                    <li><a href="https://github.com/DevSamLee" alt="github">GitHub</a> </li>
-                    <li><a href="https://www.linkedin.com/in/sam-lee-dev" alt="linkedin">LinkedIn</a></li>
-                    <li><a href="hlee32@academic.rrc.ca" alt="email">Email</a></li>
-                </ul>
+                <div class="contact-icon">
+                    <ul>
+                        <li><img src="image/name.png" alt="name"></li>
+                        <li><a href="https://github.com/DevSamLee" class="gitHub"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/sam-lee-dev" class="linkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+                        <li><a href="hlee32@academic.rrc.ca" class="email"><i class="fa fa-envelope-open" aria-hidden="true"></i>Email</a></li>
+                    </ul>
+                </div>
         </section>
         <footer id="footer">
             <div class="footer">
@@ -177,8 +180,8 @@
             <address>
                 Copyright&copy; https://github.com/DevSamLee All Right Reserved
             </address>
-        </footer>
-    </div>
+            </div>
+        </footer>    
     <script src="js/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
