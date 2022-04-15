@@ -12,19 +12,53 @@ body {
 #wrap {
     width: 1200px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 #header {
     width: 100%;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.6);
-    color: black;
-    font-size: 30px;
-    text-align: left;
 }
 
 #header img {
-    padding: 20px 30px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+
+.header-nav {
+    display: inline-block;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.header-nav li a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header-nav li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+}
+
+.header-nav li:before {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: #bbb;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.header-nav li:first-child:before {
+    width: 0;
+    height: 0;
 }
 
 #banner {
@@ -94,6 +128,12 @@ body {
     background-position-x: right;
 }
 
+#content2 .article_box1 a{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
 #content2 .article_box1,
 #content2 .article_box2,
 #content2 .article_box3,
@@ -124,28 +164,9 @@ body {
     margin-right: 20px;
 }
 
-#login_form ol {
-    background-color: #bbb;
-    margin-top: 15px;
-}
-
-#login_form input {
-    margin-top: 10px;
-    margin-left: 20px;    
-}
-
-#login_form button{
-    float: right;
-    margin-top: -40px;
-    margin-right: 30px;
-}
-
-#login_form .signup {
-    float: left;
-}
-
-form input[type=submit] {
-    margin: 0px auto;
+form input {
+    display: inline-block;
+    margin-top: 20px;
 }
 
 input:focus,
@@ -155,17 +176,12 @@ textarea:focus {
     color: black;
 }
 
-.login_contents div {
-    margin-left: 150px;
-    padding: 0;
-}
-
-.login_contents .error {
+form .error {
     visibility: hidden;
     display: none;
     color: red;
     font-weight: bold;
-    font-size: .8em;
+    font-size: 1.2em;
 }
 
 #content2 .article_box3 {
@@ -185,6 +201,22 @@ textarea:focus {
     background-image: url(../image/flowers.jpg);
     background-size: cover;
     background-position-x: right;
+}
+
+#content2 .article_box4 img {
+    width: 170px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#content2 .article_box4 a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-icon li i{
+    font-size: 20px;
+    padding-right: 10px;
 }
 
 #footer {
@@ -228,16 +260,60 @@ textarea:focus {
         height: 0;
     }
 
-#aboutme {
+#aboutme, #project {
     width: 100%;
     height: 1000px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     color: black;
     font-size: 30px;
     text-align: left;
 }
 
+#aboutme article, #project article {
+    color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+}
 
+#aboutme img, #project img {
+    float: left;
+    width: 500px;
+    margin: 10px 40px;
+    margin-left: 50px;
+}
+
+#contact h2 {
+    display: block;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#contact img {
+    float: left;
+    width: 400px;
+    margin: 20px 40px;
+}
+
+#contact input[type=checkbox],
+#contact input[type=reset],
+#contact input[type=submit] {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#contact fieldset {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#message {
+    line-height: 400px;
+    width: 600px;
+}
 /* Media Query 0 - 1200 px */
 @media (max-width: 1220px) {
     #wrap {
