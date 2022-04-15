@@ -46,34 +46,34 @@
             </div>
         </header>
         <section id="contact">
-            <div class="contact-form">
-                <img src="image/contact.jpg" alt="contact">
-            <form id="contact" action="thankyou.php" method="post">
+            <div class="form">
+                <form method="post" id="regEx" action="http://symlink.dk/code/php/submit/">
                 <fieldset>
-                    <legend>Send me a message!</legend>
-                    <ol>
-                        <li>
-                            <label for="name">Name</label>
-                            <input id="name" name="name" type="text" autofocus>
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email">
-                        </li>
-                        <li>
-                            <label for="phone">Phone</label>
-                            <input id="phone" name="phone" type="tel">
-                        </li>
-                        <li>
-                            <style>
-                                li#address {
-                                    line-height: 30px;
-                                }
-                            </style>
-                            <label for="message">Message</label>
-                        </li>
-                    </ol>
+                    <h2 class="title">Send me a message!</h2>
+                    <img src="image/contact.jpg" alt="contact">
+                    <div class="formfield">
+                        <label for="name" class="user">Name:</label>
+                        <input type="text" id="name" name="name" size="30" maxlength="15" value="" autofocus="autofocus" />
+                        <div class="user_error error" id="name_error">* Please enter your name.</div>
+                    </div>
+                    <div class="formfield">
+                        <label for="email" class="user">Email:</label>
+                        <input type="text" id="email" name="email" size="30" maxlength="20" />
+                        <div class="user_error error" id="email_error">* Please enter your email address.</div>
+                        <input type="checkbox" id="checkbox" name="checkbox" value="check">
+                        <label for="checkbox" class="user"> I'd like to get response.</label>
+                        <br>
+                        <br>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="formfield">
+                    <textarea id="message" name="message" rows="1" cols="2"></textarea>
+                    <div class="user_error error" id="message_error">* Please enter your message.</div>
+                    </div>
+                    <input type="reset" value="Clear" />
+                    <input type="submit" value="Send" />
                 </fieldset>
+                </form>
             </div>
         </section>
         <section id="content2">
@@ -90,23 +90,19 @@
                 <span>Stay Connected</span>
                 <p>Subscribe the newsletter!</p>
                 <img src="image/icon5.png" alt="newsletter">
-                <div class="login_contents">
-                    <form id="regEx" method="post" action="http://symlink.dk/code/php/submit/">
-                        <ol>
-                            <li>
-                                <label for="email" class="ir_su">ID</label>
-                                <input type="text" id="email" name="email" class="input_text"
-                                    placeholder="me@example.com">
-                            </li>
-                            <li>
-                                <div class="email_error error" id="email_error">*Please enter a valid email address
-                                </div>
-                            </li>
-                            <form action="contact.html">
-                                <input class="subscribe" type="submit" value="Subscribe" />
-                            </form>                         
-                        </ol>
-                    </form>
+                <div class="formfield">
+                    <ol>
+                        <li>
+                            <label for="sub_email" class="ir_su">email</label>
+                            <input type="text" id="sub_email" name="sub_email" class="input_text"
+                                placeholder="me@example.com">
+                        </li>                        <button onclick="myFunction()">Subcribe</button>
+                        <script>
+                            function myFunction() {
+                                alert("Thanks for the subscription!");
+                            }
+                        </script>                  
+                    </ol>
                 </div>
             </div>
             <div class="article_box3">
@@ -116,12 +112,14 @@
             </div>
             <div class="article_box4">
                 <span>Contact Info</span>
-                <ul>
-                    <li><img src="image/name.png" alt="name"></li>
-                    <li><a href="https://github.com/DevSamLee" alt="github">GitHub</a> </li>
-                    <li><a href="https://www.linkedin.com/in/sam-lee-dev" alt="linkedin">LinkedIn</a></li>
-                    <li><a href="hlee32@academic.rrc.ca" alt="email">Email</a></li>
-                </ul>
+                <div class="contact-icon">
+                    <ul>
+                        <li><img src="image/name.png" alt="name"></li>
+                        <li><a href="https://github.com/DevSamLee" class="gitHub"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/sam-lee-dev" class="linkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+                        <li><a href="hlee32@academic.rrc.ca" class="email"><i class="fa fa-envelope-open" aria-hidden="true"></i>Email</a></li>
+                    </ul>
+                </div>
         </section>
         <footer id="footer">
             <div class="footer">

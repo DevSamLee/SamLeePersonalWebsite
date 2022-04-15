@@ -49,22 +49,22 @@
             <div class="p1">
                 <article>Standard & Responsive Website</article>
                 <ol>
-                    <ul><img src="image/2-1.png" alt="project1"></ul>
-                    <ul><img src="image/2-2.png" alt="project2"></ul>
+                    <ul><a href="https://github.com/DevSamLee/StandardWeb2"><img src="image/2-1.png" alt="project1"></a></ul>
+                    <ul><a href="https://github.com/DevSamLee/ResponsiveWeb"><img src="image/2-2.png" alt="project2"></a></ul>
                 </ol>
             </div>
             <div class="p2">
                 <article>Figma Project</article>
                 <ol>
-                    <ul><img src="image/2-3.png" alt="project3"></ul>
-                    <ul><img src="image/2-5.png" alt="project4"></ul>
+                    <ul><a href="https://github.com/DevSamLee/BasicFigmaTutorial"><img src="image/2-3.png" alt="project3"></a></ul>
+                    <ul><a href="https://github.com/DevSamLee/BasicFigmaTutorial"></a><img src="image/2-5.png" alt="project4"></ul>
                 </ol>
             </div>
             <div class="p3">
                 <article>Toy Project</article>
                 <ol>
-                    <ul><img src="image/2-4.png" alt="project5"></ul>
-                    <ul><img src="image/2-6.png" alt="project6"></ul>
+                    <ul><a href="https://github.com/DevSamLee/FindMySpeakers"><img src="image/2-4.png" alt="project5"></a></ul>
+                    <ul><a href="https://github.com/DevSamLee/WhatACupOfCoffeeCosts"><img src="image/2-6.png" alt="project6"></a></ul>
                 </ol>
             </div>
         </section>
@@ -83,22 +83,19 @@
                 <p>Subscribe the newsletter!</p>
                 <img src="image/icon5.png" alt="newsletter">
                 <div class="login_contents">
-                    <form id="regEx" method="post" action="http://symlink.dk/code/php/submit/">
-                        <ol>
-                            <li>
-                                <label for="email" class="ir_su">ID</label>
-                                <input type="text" id="email" name="email" class="input_text"
-                                    placeholder="me@example.com">
-                            </li>
-                            <li>
-                                <div class="email_error error" id="email_error">*Please enter a valid email address
-                                </div>
-                            </li>
-                            <form action="contact.html">
-                                <input class="subscribe" type="submit" value="Subscribe" />
-                            </form>
-                        </ol>
-                    </form>
+                    <ol>
+                        <li>
+                            <label for="email" class="ir_su">ID</label>
+                            <input type="text" id="email" name="email" class="input_text"
+                                placeholder="me@example.com">
+                        </li>
+                        <button onclick="myFunction()">Subcribe</button>
+                        <script>
+                            function myFunction() {
+                                alert("Thanks for the subscription!");
+                            }
+                        </script>
+                    </ol>
                 </div>
             </div>
             <div class="article_box3">
@@ -108,12 +105,14 @@
             </div>
             <div class="article_box4">
                 <span>Contact Info</span>
-                <ul>
-                    <li><img src="image/name.png" alt="name"></li>
-                    <li><a href="https://github.com/DevSamLee" alt="github">GitHub</a> </li>
-                    <li><a href="https://www.linkedin.com/in/sam-lee-dev" alt="linkedin">LinkedIn</a></li>
-                    <li><a href="hlee32@academic.rrc.ca" alt="email">Email</a></li>
-                </ul>
+                <div class="contact-icon">
+                    <ul>
+                        <li><img src="image/name.png" alt="name"></li>
+                        <li><a href="https://github.com/DevSamLee" class="gitHub"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/sam-lee-dev" class="linkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+                        <li><a href="hlee32@academic.rrc.ca" class="email"><i class="fa fa-envelope-open" aria-hidden="true"></i>Email</a></li>
+                    </ul>
+                </div>
         </section>
         <footer id="footer">
             <div class="footer">

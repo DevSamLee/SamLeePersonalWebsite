@@ -49,22 +49,22 @@
             <div class="books">
                 <article>1 book / month</article>
                 <ol>
-                <ul><img src="image/b1.png" alt="book1"></ul>
-                <ul><img src="image/b2.png" alt="book2"></ul>
+                <ul><a href="https://g.co/kgs/b77zJz"><img src="image/b1.png" alt="travel1"></a></ul>
+                <ul><a href="https://books.google.ca/books?id=KxWcugEACAAJ&source=gbs_book_other_versions"><img src="image/b2.png" alt="book2"></a></ul>
                 </ol>
             </div>
             <div class="travel">
                 <article>Travel</article>
                 <ol>
-                    <ul><img src="image/1-3.png" alt="travel1"></ul>
-                    <ul><img src="image/1-2.png" alt="travel2"></ul>
+                    <ul><a href="https://en.wikipedia.org/wiki/Washington_Square_Park"><img src="image/1-3.png" alt="travel1"></a></ul>
+                    <ul><a href="https://en.wikipedia.org/wiki/Dazaifu,_Fukuoka"></a><img src="image/1-2.png" alt="travel2"></ul>
                 </ol>
             </div>
             <div class="hobby">
                 <article>Hobby</article>
                 <ol>
-                    <ul><img src="image/2-6.png" alt="coffee1"></ul>   
-                    <ul><img src="image/f1.png" alt="financial1"></ul>
+                    <ul><img src="image/1-5.png" alt="coffee1"></ul>   
+                    <ul><img src="image/c-01.png" alt="financial1"></ul>
                 </ol>
             </div>
         </section>
@@ -94,9 +94,12 @@
                                 <div class="email_error error" id="email_error">*Please enter a valid email address
                                 </div>
                             </li>
-                            <form action="contact.html">
-                                <input class="subscribe" type="submit" value="Subscribe" />
-                            </form>
+                            <button onclick="myFunction()">Subcribe</button>
+                            <script>
+                                function myFunction() {
+                                    alert("Thanks for the subscription!");
+                                }
+                            </script>
                         </ol>
                     </form>
                 </div>
@@ -108,12 +111,14 @@
             </div>
             <div class="article_box4">
                 <span>Contact Info</span>
-                <ul>
-                    <li><img src="image/name.png" alt="name"></li>
-                    <li><a href="https://github.com/DevSamLee" alt="github">GitHub</a> </li>
-                    <li><a href="https://www.linkedin.com/in/sam-lee-dev" alt="linkedin">LinkedIn</a></li>
-                    <li><a href="hlee32@academic.rrc.ca" alt="email">Email</a></li>
-                </ul>
+                <div class="contact-icon">
+                    <ul>
+                        <li><img src="image/name.png" alt="name"></li>
+                        <li><a href="https://github.com/DevSamLee" class="gitHub"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/sam-lee-dev" class="linkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+                        <li><a href="hlee32@academic.rrc.ca" class="email"><i class="fa fa-envelope-open" aria-hidden="true"></i>Email</a></li>
+                    </ul>
+                </div>
         </section>
         <footer id="footer">
             <div class="footer">
