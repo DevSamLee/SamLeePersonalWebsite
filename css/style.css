@@ -29,8 +29,6 @@ body {
 .header-nav {
     display: inline-block;
     text-align: center;
-    margin-left: 400px;
-    margin-top: 50px;
 }
 
 .header-nav li a {
@@ -323,10 +321,6 @@ form .error {
         width: 100%;
     }
 
-    #header .header-nav {
-        display: none;
-    }
-
     #content2 .article_box1 {
         width: 50%;
     }
@@ -344,10 +338,39 @@ form .error {
         width: 50%;
         border-right: 0;
     }
+
+    #aboutme,
+    #project {
+        display: flex;
+        flex-direction:column;
+        height: 1800px;
+        clear: both;
+    }
+
+    #contact .formfield {
+        padding: 0px 50px;
+    }
+
+    #contact img {
+        display: none;
+    }
 }
 
 /* Media Query 0 -  768px */
 @media (max-width: 768px) {
+    #header {
+        height: 7%;
+    }
+
+    .header-nav {
+        position: relative;
+        display: block;
+    }
+
+    .header-nav li::before {
+        display: none;
+    }
+
     #content1 {
         height: 200px;
     }
@@ -362,6 +385,14 @@ form .error {
 
     #content1 .article_left {
         background-image: none;
+    }    
+
+    #aboutme article {
+        width: 100%;
+    }
+
+    #message {
+        width: 90%;
     }
 }
 
@@ -406,5 +437,15 @@ form .error {
 
     #footer {
         height: 150px;
+    }
+
+    #aboutme,
+    #project {
+        height: 1200px;
+    }
+
+    #aboutme img,
+    #project img {
+        width: 300px;
     }
 }
