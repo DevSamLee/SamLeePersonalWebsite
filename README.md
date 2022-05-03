@@ -12,7 +12,12 @@
 
 ## Overview
 
-### BasicFigmaTutorial - LinkedIn Learning
+### Sam Lee's personal responsive website!
+
+| Layout - Responsive web |  
+|---------------------|
+| ![](./image/layout_samlee.png) |
+
 | Home |  
 |---------------------|
 | ![](./image/screen1.png) |
